@@ -1,0 +1,306 @@
+<html lang="pl">
+	<head>
+		<meta charset="utf-8">
+		<title>Chińczyk - Gra Przegladarkowa</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<link rel="stylesheet" href="style.css" type="text/css">
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	</head>
+    <body>
+        
+        <div id="container">
+            <div id="redBase" class="baseSquare"></div>
+            <div id="greenBase" class="baseSquare"></div>
+            <div id="yellowBase" class="baseSquare"></div>
+            <div id="blueBase" class="baseSquare"></div>
+            
+            <div class="grid">
+                <div class="row">
+                    <div class="box">
+                        <div id="diceRed" class="roll">?</div>
+                    </div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box">
+                        <div id="diceGreen" class="roll">?</div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="box"></div>
+                    <div class="box">
+                        <div id="base_red_1" class="basePawn"></div>
+                        <div id="red_pawn_1" class="redPawn"></div>
+                    </div>
+                    <div class="box">
+                        <div id="base_red_2" class="basePawn"></div>
+                        <div id="red_pawn_2" class="redPawn"></div>
+                    </div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box">
+                        <div id="9" class="cell">9</div>
+                    </div>
+                    <div class="box">
+                        <div id="10" class="cell">10</div>
+                    </div>
+                    <div class="box">
+                        <div id="cellGreen" class="cell">11</div>
+                    </div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box">
+                        <div id="base_green_1" class="basePawn"></div>
+                        <div id="green_pawn_1" class="greenPawn"></div>
+                    </div>
+                    <div class="box">
+                        <div id="base_green_2" class="basePawn"></div>
+                        <div id="green_pawn_2" class="greenPawn"></div></div>
+                    <div class="box"></div>
+                </div>
+                
+                <div class="row">
+                    <div class="box"></div>
+                    <div class="box">
+                        <div id="base_red_3" class="basePawn"></div>
+                        <div id="red_pawn_3" class="redPawn"></div>
+                    </div>
+                    <div class="box">
+                        <div id="base_red_4" class="basePawn"></div>
+                        <div id="red_pawn_4" class="redPawn"></div>
+                    </div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box">
+                        <div id="8" class="cell">8</div>
+                    </div>
+                    <div class="box">
+                        <div id="G1" class="greenBase">G1</div>
+                    </div>
+                    <div class="box">
+                        <div id="12" class="cell">12</div>
+                    </div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box">
+                        <div id="base_green_3" class="basePawn"></div>
+                        <div id="green_pawn_3" class="greenPawn"></div>
+                    </div>
+                    <div class="box">
+                        <div id="base_green_4" class="basePawn"></div>
+                        <div id="green_pawn_4" class="greenPawn"></div>
+                    </div>
+                    <div class="box"></div>
+                </div>
+                
+                <div class="row">
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box">
+                        <div id="7" class="cell">7</div>
+                    </div>
+                    <div class="box">
+                        <div id="G2" class="greenBase">G2</div>
+                    </div>
+                    <div class="box">
+                        <div id="13" class="cell">13</div>
+                    </div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                </div>
+                
+                <div class="row">
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box">
+                        <div id="6" class="cell">6</div>
+                    </div>
+                    <div class="box">
+                        <div id="G3" class="greenBase">G3</div>
+                    </div>
+                    <div class="box">
+                        <div id="14" class="cell">14</div>
+                    </div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                </div>
+                <div class="row">
+                    <div class="box"></div>
+                    <div class="box"><div id="cellRed" class="cell">1</div></div>
+                    <div class="box"><div id="2" class="cell">2</div></div>
+                    <div class="box"><div id="3" class="cell">3</div></div>
+                    <div class="box"><div id="4" class="cell">4</div></div>
+                    <div class="box"><div id="5" class="cell">5</div></div>
+                    <div class="box"><div id="G4" class="greenBase">G4</div></div>
+                    <div class="box"><div id="15" class="cell">15</div></div>
+                    <div class="box"><div id="16" class="cell">16</div></div>
+                    <div class="box"><div id="17" class="cell">17</div></div>
+                    <div class="box"><div id="18" class="cell">18</div></div>
+                    <div class="box"><div id="19" class="cell">19</div></div>
+                    <div class="box"></div>
+                </div>
+                <div class="row">
+                    <div class="box"></div>
+                    <div class="box"><div id="40" class="cell">40</div></div>
+                    <div class="box"><div id="R1" class="redBase">R1</div></div>
+                    <div class="box"><div id="R2" class="redBase">R2</div></div>
+                    <div class="box"><div id="R3" class="redBase">R3</div></div>
+                    <div class="box"><div id="R4" class="redBase">R4</div></div>
+                    <div class="box"></div>
+                    <div class="box"><div id="B4" class="blueBase">B4</div></div>
+                    <div class="box"><div id="B3" class="blueBase">B3</div></div>
+                    <div class="box"><div id="B2" class="blueBase">B2</div></div>
+                    <div class="box"><div id="B1" class="blueBase">B1</div></div>
+                    <div class="box"><div id="20" class="cell">20</div></div>
+                    <div class="box"></div>
+                </div>
+                <div class="row">
+                    <div class="box"></div>
+                    <div class="box"><div id="39" class="cell">39</div></div>
+                    <div class="box"><div id="38" class="cell">38</div></div>
+                    <div class="box"><div id="37" class="cell">37</div></div>
+                    <div class="box"><div id="36" class="cell">36</div></div>
+                    <div class="box"><div id="35" class="cell">35</div></div>
+                    <div class="box"><div id="Y4" class="yellowBase">Y4</div></div>
+                    <div class="box"><div id="25" class="cell">25</div></div>
+                    <div class="box"><div id="24" class="cell">24</div></div>
+                    <div class="box"><div id="23" class="cell">23</div></div>
+                    <div class="box"><div id="22" class="cell">22</div></div>
+                    <div class="box"><div id="cellBlue" class="cell">21</div></div>
+                    <div class="box"></div>
+                </div>
+                <div class="row">
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"><div id="34" class="cell">34</div></div>
+                    <div class="box"><div id="Y3" class="yellowBase">Y3</div></div>
+                    <div class="box"><div id="26" class="cell">26</div></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                </div>
+                <div class="row">
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"><div id="33" class="cell">33</div></div>
+                    <div class="box"><div id="Y2" class="yellowBase">Y2</div></div>
+                    <div class="box"><div id="27" class="cell">27</div></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                </div>
+        
+                <div class="row">
+                    <div class="box"></div>
+                    <div class="box">                        
+                        <div id="base_yellow_1" class="basePawn"></div>
+                        <div id="yellow_pawn_1" class="yellowPawn"></div>
+                    </div>
+                    <div class="box">
+                        <div id="base_yellow_2" class="basePawn"></div>
+                        <div id="yellow_pawn_2" class="yellowPawn"></div>
+                    </div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box">
+                        <div id="32" class="cell">32</div>
+                    </div>
+                    <div class="box">
+                        <div id="Y1" class="yellowBase">Y1</div>
+                    </div>
+                    <div class="box">
+                        <div id="28" class="cell">28</div>
+                    </div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box">
+                        <div id="base_blue_1" class="basePawn"></div>
+                        <div id="blue_pawn_1" class="bluePawn"></div>
+                    </div>
+                    <div class="box">
+                        <div id="base_blue_2" class="basePawn"></div>
+                        <div id="blue_pawn_2" class="bluePawn"></div>
+                    </div>
+                    <div class="box"></div>
+                </div>
+        
+                <div class="row">
+                    <div class="box"></div>
+                    <div class="box">                        
+                        <div id="base_yellow_3" class="basePawn"></div>
+                        <div id="yellow_pawn_3" class="yellowPawn"></div>
+                    </div>
+                    <div class="box">
+                        <div id="base_yellow_4" class="basePawn"></div>
+                        <div id="yellow_pawn_4" class="yellowPawn"></div>
+                    </div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"><div id="cellYellow" class="cell">31</div></div>
+                    <div class="box"><div id="30" class="cell">30</div></div>
+                    <div class="box"><div id="29" class="cell">29</div></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box">
+                        <div id="base_blue_3" class="basePawn"></div>
+                        <div id="blue_pawn_3" class="bluePawn"></div>
+                    </div>
+                    <div class="box">
+                        <div id="base_blue_4" class="basePawn"></div>
+                        <div id="blue_pawn_4" class="bluePawn"></div>
+                    </div>
+                    <div class="box"></div>
+                </div>
+                <div class="row">
+                    <div class="box"><div id="diceYellow" class="roll">?</div></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"><div id="diceBlue" class="roll">?</div></div>
+                </div>
+                
+                <button id="button">Rzuć kostką</button>
+                <script src="game.js"></script>
+            </div>
+        </div>
+    </body>
+</html>
